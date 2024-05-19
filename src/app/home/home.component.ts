@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { CommonModule } from '@angular/common';
 import { HousingLocationComponent } from '../housing-location/housing-location.component';
 import { HousingLocation } from '../housinglocation';
 
@@ -7,7 +7,8 @@ import { HousingLocation } from '../housinglocation';
   selector: 'app-home',
   standalone: true,
   imports: [
-      HousingLocationComponent,
+    CommonModule,
+    HousingLocationComponent
   ],
   template: `
   <section>
